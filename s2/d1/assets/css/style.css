@@ -8,59 +8,7 @@ body {
 	background-color: grey
 }
 
-.container {
-	width: 80%;
-	background-color: white;
-	margin: 0 auto;
-}
-
-.box {
-	border: 5px solid black;
-	width: 50%;
-	height: 336px;
-	float: left;
-}
-
-.clear:after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-nav {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.circle-nav {
-	border: 2px solid black;
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-	margin: 15px
-}
-
-#red {
-	background-color: red;
-}
-
-#orange {
-	background-color: orange;
-}
-
-#yellow {
-	background-color: yellow;
-
-}#green {
+.newClass {
 	background-color: green;
-
-}#blue {
-	background-color: blue;
-
-}#indigo {
-	background-color: indigo;
-
-}#violet {
-	background-color: violet;
+	color: yellow;
 }
