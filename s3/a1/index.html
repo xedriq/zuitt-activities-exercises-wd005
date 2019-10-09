@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!-- bootswatch -->
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<title>Grading with DOM</title>
+</head>
+<body>
+	<div class="container text-center mt-5">
+		<form class="form-group d-flex justify-content-around">
+			<input class="form-control text-center" type="text" id="input1" placeholder="1st Grading">
+			<input class="form-control text-center" type="text" id="input2" placeholder="2nd Grading">
+			<input class="form-control text-center" type="text" id="input3" placeholder="3rd Grading">
+			<input class="form-control text-center" type="text" id="input4" placeholder="4th Grading">
+		</form>
+
+		<button class="btn btn-primary my-3" id="compute">Get Average</button>
+		
+		<h3> Average: <span class="font-weight-bolder" id="average"></span></h3>
+		<h3> Status: <span class="font-weight-bolder" id="pof"></span></h3>
+		<h3> QPI: <span class="font-weight-bolder" id="qpi"></span></h3>
+	</div>
+	
+
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>
+
