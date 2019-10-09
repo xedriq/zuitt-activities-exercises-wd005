@@ -3,22 +3,31 @@ let button2 = document.querySelector("#button2")
 let button3 = document.querySelector("#button3")
 let button4 = document.querySelector("#button4")
 let button5 = document.querySelector("#button5")
-let value1 = document.querySelector("#input1")
-let value2 = document.querySelector("#input2")
-let value3 = document.querySelector("#input3")
-let value4 = document.querySelector("#input4")
-let value5 = document.querySelector("#input5")
-let list1 = document.querySelector("#li1")
-let list2 = document.querySelector("#li2")
-let list3 = document.querySelector("#li3")
-let list4 = document.querySelector("#li4")
-let list5 = document.querySelector("#li5")
+// let value1 = document.querySelector("#input1")
+// let value2 = document.querySelector("#input2")
+// let value3 = document.querySelector("#input3")
+// let value4 = document.querySelector("#input4")
+// let value5 = document.querySelector("#input5")
+// let list1 = document.querySelector("#li1")
+// let list2 = document.querySelector("#li2")
+// let list3 = document.querySelector("#li3")
+// let list4 = document.querySelector("#li4")
+// let list5 = document.querySelector("#li5")
 
 // Add
 
+function reuse(num) {
+	let list = document.querySelector("#list" + num)
+	let input = document.querySelector("#value" + num)
+
+	list.innerHTML = input.value
+	input.value = ""
+}
+
 button1.addEventListener("click", function() {
-	list1.innerHTML = value1.value
-	value1.value = ""
+	// list1.innerHTML = value1.value
+	// value1.value = ""
+	reuse(1)
 })
 
 button2.addEventListener("click", function() {
