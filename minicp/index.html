@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<!-- bootswatch -->
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+
+	<title>DOM Manipulation Mini Capstone</title>
+</head>
+<body>
+
+	<div class="jumbotron bg-white mb-0">
+		<div class="container-fluid">
+			<div class="row d-md-flex align-items-center">
+				
+				<!-- left column -->
+				<div class="col-md-4 text-center text-md-left">
+					<h1 class="display-md-4 p-md-3">Wonder what it is like in outer space?</h1>
+
+					<button class="btn btn-block btn-primary" id="signButton" data-toggle="modal" data-target="#registerModal">Sign Up</button>
+				</div>
+
+				<!-- right column -->
+				<div class="col-md-8 d-none d-md-block pl-5">
+					<img class="img-fluid" src="https://cdn.dribbble.com/assets/art-banners/spaceman-b6754ff469f369e504a98de09e34a6749b6e3536dfa07e4ae4637b6ac02afdad.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="registerModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+			        <h5 class="modal-title">Register</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			    </div>
+			    <div class="modal-body">
+			    	<img class="img-fluid" src="https://cdn.dribbble.com/assets/art-banners/spaceman-b6754ff469f369e504a98de09e34a6749b6e3536dfa07e4ae4637b6ac02afdad.png" />
+			    	<form>
+			    		<div class="form-group">
+			    			<label for="username" class="form-control-label">Username: </label>
+			    			<input class="form-control" id="username" type="text" placeholder="Please input username" />
+			    			<div id="userErr" class="invalid-feedback"></div>
+			    		</div>
+
+			    		<div class="form-group">
+			    			<label for="email" class="form-control-label">Email: </label>
+			    			<input class="form-control" id="email" type="email" placeholder="Please input email" />
+			    			<div id="emailErr" class="invalid-feedback"></div>
+			    		</div>
+
+			    		<div class="form-group">
+			    			<label for="password" class="form-control-label">Password: </label>
+			    			<input class="form-control" id="password" type="password" placeholder="Please input password" />
+			    			<div id="passErr" class="invalid-feedback"></div>
+			    		</div>
+
+			    		<div class="form-group">
+			    			<label for="password2" class="form-control-label">Confirm Password: </label>
+			    			<input class="form-control" id="password2" type="password" placeholder="Please retype your password" />
+			    			<div id="pass2Err" class="invalid-feedback"></div>
+			    		</div>
+			    	</form>
+			    </div>
+			    <div class="modal-footer">
+			        <button type="button" class="btn btn-primary btn-block" id="registerButton">Register</button>   
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- sweet alert 2 -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>
