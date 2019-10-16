@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.hello {
+	width: 250;
+	position: absolute;
+}
+
+.done {
+	color: grey;
+	text-decoration: line-through;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<!-- bootswatch -->
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+
+	<title>JQUERY RACE</title>
+</head>
+<body>
+	<div class="text-center">
+		<h1 class="mb-5">Jquery Race</h1>
+		<p>Select Difficulty:</p>
+		<div>
+			<button class="btn btn-success" id="easy">Easy</button>
+			<button class="btn btn-info" id="normal">Normal</button>
+			<button class="btn btn-danger" id="hard">Hard</button>	
+		</div>
+		
+		<hr>
+		<button class="btn btn-warning mb-3" id="start" disabled>Start Race!</button>
+		<h2 id="winner" class="text-center"></h2>
+		
+				
+	</div>
+
+
+	<div id="track">
+		<div class="finish-line"></div>
+		<div class="character" id="player">
+			<img src="https://images.vexels.com/media/users/3/138239/isolated/preview/5db7beb2e763935312c77dc7524997f2-skateboarding-rider-by-vexels.png">
+		</div>
+		<div class="character" id="ai">
+			<img src="https://icon-library.net/images/skateboard-icon-png/skateboard-icon-png-17.jpg">
+		</div>	
+	</div>
+
+	
+	
+	<script type="text/javascript" src="./assets/js/jquery-3.4.1.min.js"></script>
+
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>

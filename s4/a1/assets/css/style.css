@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body  {
+	background-image: url('https://ae01.alicdn.com/kf/HTB1f6FkqbGYBuNjy0Foxh7iBFXaX/Laeacco-Grunge-Gray-Gradient-Solid-Cement-Wall-Portrait-Photographic-Background-Customized-Photography-Backdrop-For-Photo-Studio.jpeg');
+	background-size: cover;	
+}
+
+.character	{
+	position: absolute;
+	width: 100px;
+	cursor: pointer;
+}
+
+#ai {
+	top: 100px;
+}
+
+#player {
+	top: 200px;
+}
+
+img {
+	width: 100%;
+}
+
+#track {
+	position: absolute;
+	top: 200px;
+}
+
+.finish-line {
+	/*background-color: white;*/
+	border: 4px dashed white;
+	position: absolute;
+	top: 50px;
+	left: 1050px;
+	width: 10px;
+	height: 300px;
+
+}
+
